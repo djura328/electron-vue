@@ -21,6 +21,11 @@ export default new Router({
       component: require('@/components/pages/index').default
     },
     {
+      path: '/pages/article',
+      name: 'index',
+      component: require('@/components/pages/article.vue').default
+    },
+    {
       path: '*',
       redirect: '/'
     }
