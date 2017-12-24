@@ -95,8 +95,8 @@
       items: [
         { icon: 'apps', title: 'Welcome', to: '/' },
         { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' },
-        { icon: 'bubble_chart', title: 'Test', to: '/pages' },
-        { icon: 'bubble_chart', title: 'Images', to: '/pages/article' }
+        { icon: 'bubble_chart', title: 'Images', to: '/pages/article' },
+        { icon: 'bubble_chart', title: 'Videos', to: '/pages/videos' }
       ],
       miniVariant: false,
       right: true,

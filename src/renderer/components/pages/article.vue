@@ -26,6 +26,7 @@
 			        </v-slide-y-transition>
 			      </v-card>
 			    </v-flex>
+			    <div v-if="loader" class="loader-custom"></div>
 		</v-layout>
 </template>
 
@@ -35,10 +36,12 @@
   data () {
 	    return {   
 	    	images:[],
-	    	show: false
+	    	show: false,
+	    	loader: false
 	     }
 	},
 	created () {
+		this.loader = true
 		axios.get('https://api.gettyimages.com/v3/search/images', {headers: {'Api-Key': 'c4yqk3dnxfqrua8w3bj444qh'}
 		})
 		.then(response => {
@@ -54,6 +57,7 @@
 				})
 				i++
 			})
+			this.loader = false
 		}).catch(error => {
 			console.log(error)
 		})

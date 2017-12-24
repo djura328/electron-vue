@@ -16,14 +16,14 @@ export default new Router({
       component: require('@/components/InspireView').default
     },
     {
-      path: '/pages',
-      name: 'index',
-      component: require('@/components/pages/index').default
+      path: '/pages/article',
+      name: 'article',
+      component: require('@/components/pages/article.vue').default
     },
     {
-      path: '/pages/article',
-      name: 'index',
-      component: require('@/components/pages/article.vue').default
+      path: '/pages/videos',
+      name: 'videos',
+      component: require('@/components/pages/videos.vue').default
     },
     {
       path: '*',
